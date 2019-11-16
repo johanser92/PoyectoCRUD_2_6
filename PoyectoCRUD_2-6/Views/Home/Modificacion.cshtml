@@ -1,0 +1,32 @@
+﻿@Model ProyectoCRUD_2-6.mdels.Pelicula
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alta</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Home/Modificacion">
+            Id:
+            <input type="text" name="Id" value="@Model.Id" readonly />
+            <br />
+            Descripcion:
+            <input type="text" name="descripcion" value="@Model.Descripcion" />
+            <br />
+            Tipo:
+            <input type="text" name="Tipo" value="@Model.Tipo" />
+            <br />
+            Precio:
+            <input type="text" name="precio" value="@Model.Precio" />
+            <br />
+            <input type="submit" value="Confirmar" />
+        </form>
+    </div>
+</body>
+</html>
